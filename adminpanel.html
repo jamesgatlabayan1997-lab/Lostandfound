@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back2U - My Reports</title>
+    <link rel="stylesheet" href="adminpanel.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="icon">📍</span> Back2U
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Report Item</a>
+            <a href="#" class="btn-primary">View Listings</a>
+        </nav>
+        <div class="user-menu">
+            <span class="username">back2u 👤</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>My Reports</h1>
+
+        <section class="search-bar">
+            <input type="text" placeholder="Search by item name">
+            <select>
+                <option>All Categories</option>
+            </select>
+            <select>
+                <option>All Status</option>
+            </select>
+            <button class="btn-search">Search</button>
+        </section>
+
+        <div class="report-table">
+            <div class="table-header">
+                <div>Item Name</div>
+                <div>Category</div>
+                <div>Description</div>
+                <div>Date & Time</div>
+                <div>Location</div>
+                <div>Status</div>
+                <div>Contact Info</div>
+                <div>Image</div>
+            </div>
+
+            <div class="table-row empty-state">
+                <p>No reports found.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

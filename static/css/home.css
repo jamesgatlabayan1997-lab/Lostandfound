@@ -1,0 +1,418 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: transparent; /* walang sariling background */
+    position: absolute; /* nasa ibabaw ng hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space ng logo at text */
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.logo{
+    position: absolute;
+    margin-top: 40px;
+    left: 100px;
+    width: 80px;   /* adjust size if needed */
+    height: auto;
+}
+
+.log{
+    position: absolute;
+    margin-top: 72px;
+    left: 185px;
+    width: 225px;   /* adjust size if needed */
+    height: auto;
+}
+
+.nav-links{
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: 100px;
+    display:flex;
+    font-weight: bold;
+    font-size: medium;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:50px;
+}
+
+.nav-links a{
+   color:white;
+   text-decoration:none;
+   font-size:16px;
+}
+
+.nav-links a:hover{
+   color: gold;
+}
+
+
+/* HERO */
+
+.hero{
+   height:110vh;
+   background-image: url('../css/image/14.avif');
+   background-size:cover;
+   background-position:center;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   text-align:center;
+   color:white;
+}
+.hero-text{
+    margin-left: 100px;
+    margin-right:auto;
+    max-width: fit-content60px 10%;
+}
+
+.hero-text h1{
+   font-size:48px;
+   margin-bottom:20px;
+}
+
+.hero-text p{
+   font-size: 14px;
+   margin-bottom:25px;
+}
+
+.hero button{
+   padding:10px 25px;
+   border:none;
+   background:gold;
+   font-weight:bold;
+   cursor:pointer;
+}
+
+.hero-btn:hover{
+    background: #1e8449;
+}
+
+.title-image{
+    margin-top: 208px;
+    width: 900px;
+    height: auto;
+}
+
+
+/* Features */
+
+/* Center the main container and restrict width for that "bulletin" look */
+#features .container {
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Header styling */
+.card-header {
+    font-size: 1.25rem;
+    padding: 15px !important;
+    border-bottom: none;
+}
+
+/* Individual Announcement Item styling */
+.announcement-item {
+    padding: 10px 0;
+}
+
+.announcement-item h5 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Text spacing and alignment */
+.announcement-item p {
+    color: #6c757d; /* Muted gray for the description */
+    line-height: 1.6;
+    max-width: 85%;
+    margin: 0 auto; /* Centers the paragraph text block */
+}
+
+/* Horizontal rule styling */
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* Custom icon colors (Optional: if you want the blue from the screenshot) */
+.text-primary {
+    color: #007bff !important;
+}
+
+
+/* SERVICES */
+
+.services-section {
+  min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;
+    padding: 11%;
+    background-color: #f5f7fb;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #222;
+}
+
+.section-subtitle {
+    max-width: 600px;
+    margin: 10px auto 40px;
+    font-size: 15px;
+    color: #666;
+}
+
+/* Grid layout */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card */
+.service-card {
+    background: #fff;
+    padding: 28px 20px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+/* ABOUT */
+
+/* ABOUT SECTION */
+.about-container {
+    background-image: url('../css/image/h.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px; /* Space sa taas at baba para hindi dikit sa ibang section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.about {
+  border: 3px solid rgba(255, 255, 255, 0.5); /* Puting border */
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(15px); /* Glass blur effect */
+  -webkit-backdrop-filter: blur(15px);
+    
+  padding: 50px;
+  max-width: 850px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  width: 100%;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.mission, .vision {
+    flex: 1;
+    min-width: 250px; /* Para mag-stack sila sa mobile */
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #eef2ff;
+}
+
+/* TEAM SECTION */
+.team {
+ background-color: whitesmoke;
+  min-height: 100vh;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.team h2 {
+  font-size: 36px;
+  margin-bottom: 100px;
+  color: #000;
+
+}
+
+.team-card {
+  position: relative;
+  height: 390px;
+  width: 280px;              
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;       
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-sizing: border-box;   
+  overflow: hidden;         
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px auto;
+  display: block;
+  transition: transform 0.3s ease;
+  border: 5px solid #4facfe;
+}
+
+.team-card img:hover  {
+    transform: scale(1.1);
+}
+
+.team-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+/* Role */
+.team-card span {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Description text */
+.description {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 10px;          /* prevents text touching edges */
+  word-wrap: break-word;
+}
+
+/* SWIPER */
+.swiper {
+  padding-bottom: 50px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+/* CONTACT */
+
+
+.contact {
+min-height: 100vh;
+padding:270px;
+text-align:center;
+background:#eef2ff;
+}
+
+
+.contact h2 {
+  color: #359df8;
+  font-weight: 500px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  
+}
+
+.contact p {
+  line-height: 1.8; 
+  font-family: Arial, sans-serif; 
+}
+
+ .text-primary {
+  color: #4facfe;
+}
+
+
+/* FOOTER */
+
+footer{
+font-size: 15px;
+text-align:center;
+background:#1e3a8a;
+color:white;
+padding:20px;
+}
+
+.social-icons a i {
+    font-size: 28px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+
+
+}
+
+.social-icons a:hover i  {
+    transform: scale(1.2);
+
+}

@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa; 
+    display: flex;
+    min-height: 100vh;
+    color: #111827;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.admin-label {
+    color: #3b82f6;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #374151;
+    transition: 0.3s;
+}
+
+.nav-links li.active {
+    background-color: #e5e7eb;
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-links li:hover:not(.active) {
+    background-color: #f3f4f6;
+    color: #000;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Top Bar */
+.top-header {
+    margin-bottom: 30px;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+}
+
+.search-section input,
+.search-section select {
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+.btn-search,
+.btn-verify {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-search {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+.btn-verify {
+    background-color: #10b981;
+    color: #fff;
+}
+
+/* Table */
+.listing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.listing-table th {
+    background-color: #f9fafb;
+    padding: 12px;
+    text-align: left;
+}
+
+.listing-table td {
+    padding: 12px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.no-data {
+    text-align: center;
+    color: #6b7280;
+    padding: 30px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="AdminPanelstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo">
+            <i class='bx bxl-flutter'></i> LOST & FOUND
+        </div>
+        <p class="admin-label">Admin Panel</p>
+        <ul class="nav-links">
+            <li >Dashboard</li>
+            <li>Manage Users</li>
+            <li>Manage Listings</li>
+            <li>Settings</li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <div class="header-right">
+                <div class="toggle-switch"></div>
+                <div class="user-profile">
+                    <span class="user-icon">👤</span> unknown user
+                </div>
+            </div>
+        </header>
+
+        <section class="dashboard-section">
+            <h1 class="welcome-text">Welcome <i class='bx bxl-flutter'></i> LOST & FOUND</h1>
+
+
+<div class="stats-grid">
+    <div class="stat-card blue">
+        <h3 tabindex="0">Total Reports</h3>
+        <p class="count blue-text">0</p>
+    </div>
+
+    <div class="stat-card green">
+        <h3 tabindex="0">Resolved Cases</h3>
+        <p class="count green-text">0</p>
+    </div>
+
+    <div class="stat-card red">
+        <h3 tabindex="0">Pending Reports</h3>
+        <p class="count red-text">0</p>
+    </div>
+</div>
+
+
+            <div class="table-container">
+                <h2 class="section-title">Verified Reports</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Item</th>
+                            <th>Status</th>
+                            <th>User</th>
+                            <th>Verification Date</th>
+                            <th>Actions</th>
+                            <th>Mail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="7" class="no-data">No verified reports found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

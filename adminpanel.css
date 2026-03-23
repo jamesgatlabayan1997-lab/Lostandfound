@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* White background as requested */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.search-bar input, .search-bar select {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-search {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Table Design */
+.report-table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #3b82f6;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.empty-state {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #eee;
+    color: #999;
+}
+
+/* --- MOBILE RESPONSIVE FIX --- */
+@media (max-width: 768px) {
+    .table-header {
+        display: none; /* Hide headers on mobile */
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    /* Transform row into a card */
+    .table-row {
+        display: block;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    /* You can add labels via CSS pseudo-elements if you have real data */
+}

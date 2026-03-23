@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="userpanel.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-section">
+             <img src="static/css/image/logo.png" alt="Anchor Logo" class="logo">
+        </div>
+        <nav class="nav-links">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Report Item</button>
+            <button class="nav-btn btn-primary">View Listings</button>
+            <div class="user-profile">
+                <section class="filter-section">
+                    <input type="text" placeholder="Search by item name" class="search-input">
+                    <select class="filter-select">
+                        <option>User Dashboard</option>
+                        <option>Admin Panel</option>
+                        <option>Logout</option>
+                    </select>
+                </section>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>My Reports</h1>
+
+        <section class="filter-section">
+            <input type="text" placeholder="Search by item name" class="search-input">
+            <select class="filter-select">
+                <option>All Categories</option>
+                <option>Electronics</option>
+                <option>Personal Items</option>
+            </select>
+            <select class="filter-select">
+                <option>All Status</option>
+                <option>Lost</option>
+                <option>Found</option>
+            </select>
+            <button class="btn-primary search-btn">Search</button>
+        </section>
+
+        <div class="table-responsive">
+            <table class="reports-table">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Date & Time</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Contact Info</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Listings</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Managelistningstyle.css">
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="logo">
+            <i class='bx bxl-flutter'></i> LOST & FOUND
+        </div>
+
+        <p class="admin-label">Admin Panel</p>
+
+        <ul class="nav-links">
+            <li class=>Dashboard</li>
+            <li>Manage Users</li>
+            <li>Manage Listings</li>
+            <li>Settings</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="top-header">
+            <div class="search-section">
+                <input type="text" placeholder="Search listings...">
+                <select>
+                    <option>All</option>
+                </select>
+                <button class="btn-search">Search</button>
+                <button class="btn-verify">Verify Items</button>
+            </div>
+        </header>
+
+        <table class="listing-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Item Name</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Date & Time</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Contact Info</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="10" class="no-data">No listings found</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</div>
+
+</body>
+</html>
