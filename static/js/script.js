@@ -28,5 +28,25 @@
       });
     });
 
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
 
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
     
+    // Toggle between menu and close icon
+    const icon = menuIcon.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        icon.classList.replace('bx-menu', 'bx-x');
+    } else {
+        icon.classList.replace('bx-x', 'bx-menu');
+    }
+});
+
+// Auto-close when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuIcon.querySelector('i').classList.replace('bx-x', 'bx-menu');
+    });
+});
